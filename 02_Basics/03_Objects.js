@@ -1,5 +1,9 @@
 // ********************* Declaration of Objects *********************
 
+// Object Literals 
+
+
+
 // const myObj={
 //     name:"Jimmy",
 //     age:24,
