@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | DOM </title>
+</head>
+<body style="background-color: black; color: azure;">
+    <ul class="language">
+        <li>JavaSCript</li>
+    </ul>
+    
+</body>
+<script>
+    function languageAddition(langName){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    languageAddition("Python")
+    languageAddition("Java")
+
+    const langAdd=(langName)=>{
+        const li=document.createElement('li')
+        li.innerHTML=`${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    langAdd("Helo");
+    langAdd("c++")
+
+    // Edit Value 
+   const secondChild= document.querySelector('li:nth-child(2)')
+   secondChild.innerHTML="Golang"
+
+   // OR  use Replace with
+   
+   const firstChild= document.querySelector('li:first-child')
+   const newLi=document.createElement('li')
+   newLi.appendChild(document.createTextNode("Java"))
+   firstChild.replaceWith(newLi)
+
+   // OR using OuterHtml
+   const thirdChild= document.querySelector('li:nth-child(3)')
+   thirdChild.outerHTML="<li>Hello</li>"
+
+  // Remove
+   const lastChild=document.querySelector('li:last-child')
+   lastChild.remove()
+
+</script>
+</html>
