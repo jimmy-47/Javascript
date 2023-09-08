@@ -1,0 +1,21 @@
+.images >li>img{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    list-style: none;
+}
+.images>li>img:hover{
+    height: 400px;
+    width: 500px;
+    transition: ease-in-out;
+    transition-duration: 1s;
+    cursor: pointer;
+}
