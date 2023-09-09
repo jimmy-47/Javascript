@@ -6,4 +6,6 @@ fetch('https://api.github.com/users/jimmy-47')
     console.log(data.followers);
 }).catch(()=>{
     console.log('oops got error');
+}).finally(()=>{
+    console.log('Yaay ! Finally got sucess');
 })
